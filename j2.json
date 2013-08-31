@@ -1,0 +1,34 @@
+ var j = {
+   "enter_lesson": "lesson1",
+   "exit_lesson": "lesson7",
+
+   "lessons": {
+       "lesson1": {
+           "title": "有理数章节介绍"
+       },
+       "lesson2": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson1"]
+       },
+       "lesson3": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson1"]
+       },
+       "lesson4": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson1"]
+       },
+       "lesson5": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson3"]
+       },
+       "lesson6": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson3"]
+       },
+       "lesson7": {
+           "title": "有理数章节介绍",
+           "requirements": ["lesson2", "lesson4", "lesson5", "lesson6"]
+       }
+   }
+};

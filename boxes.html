@@ -1,0 +1,201 @@
+<head>
+	<link href="lessons.css" rel="stylesheet">
+  <!-- <link href="bootstrap.css" rel="stylesheet"> -->
+</head>
+
+<body>
+<script src="boxes.js" type="text/javascript"></script>
+<script type="text/javascript">
+var j1 = {
+  "enter_lesson": "lesson1",
+  "exit_lesson": "lesson7",
+
+  "lessons": {
+    "lesson1": {
+       "title": "有理数章节介绍"
+    },
+    "lesson2": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson1"]
+    },
+    "lesson3": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson1"]
+    },
+    "lesson4": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson1"]
+    },
+    "lesson5": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson3"]
+    },
+    "lesson6": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson3"]
+    },
+    "lesson7": {
+       "title": "有理数章节介绍",
+       "requirements": ["lesson2", "lesson4", "lesson5", "lesson6"]
+    }
+  }
+};
+
+var j2 = {
+   "enter_lesson": "lesson1",
+   "exit_lesson": "lesson",
+
+   "lessons": {
+       "lesson1": {
+           "title": "有理数章节介绍"
+       },
+       "lesson2": {
+           "title": "认识负数",
+           "requirements": ["lesson1"]
+       },
+       "lesson3": {
+           "title": "理解负数",
+           "requirements": ["lesson1"]
+       },
+       "lesson4": {
+           "title": "相反数",
+           "requirements": ["lesson2", "lesson3"]
+       },
+       "lesson5": {
+           "title": "数轴基础",
+           "requirements": ["lesson2", "lesson3"]
+       },
+       "lesson6": {
+           "title": "数轴运用",
+           "requirements": ["lesson2", "lesson3"]
+       },
+       "lesson7": {
+           "title": "倒数",
+           "requirements": ["lesson2", "lesson3"]
+       },
+       "lesson8": {
+           "title": "绝对值基础",
+           "requirements": ["lesson4", "lesson5", "lesson6", "lesson7"]
+       },
+       "lesson9": {
+           "title": "绝对值拓展",
+           "requirements": ["lesson4", "lesson5", "lesson6", "lesson7"]
+       },
+       "lesson10": {
+           "title": "有理数四则运算介绍",
+           "requirements": ["lesson8"]
+       },
+       "lesson11": {
+           "title": "有理数加法（同号）",
+           "requirements": ["lesson10"]
+       },
+       "lesson12": {
+           "title": "有理数加法（同号）补充练习",
+           "requirements": ["lesson10"]
+       },
+       "lesson13": {
+           "title": "有理数的加减（异号）",
+           "requirements": ["lesson11"]
+       },
+       "lesson14": {
+           "title": "有理数的加减（异号）补充练习",
+           "requirements": ["lesson11"]
+       },
+       "lesson15": {
+           "title": "有理数的乘法（异号）",
+           "requirements": ["lesson13"]
+       },
+       "lesson16": {
+           "title": "有理数的乘法（同号）",
+           "requirements": ["lesson13"]
+       },
+       "lesson17": {
+           "title": "多个有理数异号相乘",
+           "requirements": ["lesson13"]
+       },
+       "lesson18": {
+           "title": "有理数四则运算",
+           "requirements": ["lesson15", "lesson16", "lesson17"]
+       },
+       "lesson19": {
+           "title": "有理数四则运算补充练习",
+           "requirements": ["lesson15", "lesson16", "lesson17"]
+       },
+       "lesson20": {
+           "title": "乘方基础",
+           "requirements": ["lesson18"]
+       },
+       "lesson21": {
+           "title": "含乘方四则运算",
+           "requirements": ["lesson18"]
+       },
+       "lesson22": {
+           "title": "科学计数法",
+           "requirements": ["lesson18"]
+       },
+       "lesson23": {
+           "title": "近似数",
+           "requirements": ["lesson18"]
+       },
+       "lesson24": {
+           "title": "非负性专题",
+           "requirements": ["lesson20", "lesson21", "lesson22", "lesson23"]
+       },
+       "lesson25": {
+           "title": "数学思想之数形结合",
+           "requirements": ["lesson20", "lesson21", "lesson22", "lesson23"]
+       },
+       "lesson26": {
+           "title": "数学思想之分类讨论",
+           "requirements": ["lesson20", "lesson21", "lesson22", "lesson23"]
+       },
+       "lesson27": {
+           "title": "有理数章节总结",
+           "requirements": ["lesson24", "lesson25", "lesson26"]
+       }
+   }
+};
+
+var j3 = {
+
+    "enter_lesson": "lesson1",
+    "exit_lesson": "lesson",
+
+    "lessons": {
+      "lesson1": {
+        "title": "有理数章节介绍"
+      },
+      "lesson2": {
+        "title": "认识负数",
+        "requirements": ["lesson1"]
+      },
+      "lesson3": {
+        "title": "理解负数",
+        "requirements": ["lesson1"]
+      },
+      "lesson4": {
+        "title": "理解负数",
+        "requirements": ["lesson1"]
+      },
+      "lesson5": {
+        "title": "理解负数",
+        "requirements": ["lesson2", "lesson3"]
+        // "requirements": ["lesson3"]
+      },
+      "lesson6": {
+        "title": "理解负数",
+        "requirements": ["lesson2", "lesson3"]
+      },
+      "lesson7": {
+        "title": "理解负数",
+        "requirements": ["lesson5", "lesson6", "lesson4"]
+      },
+    }  
+};
+
+Deps.init([j3]);
+Deps.genmap();
+
+</script>
+
+</body>
